@@ -10,14 +10,12 @@
 
   <project path="src/rtsmart/rtsmart" name="rtsmart" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/rtsmart/mpp" name="mpp" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
-  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
+  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk" remote="canmv-k230" revision="v2.9.0"/>
 
   <!-- canmv start -->
   <project path="src/canmv" name="canmv" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
 
   <project path="src/canmv/micropython" name="micropython" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
-
-  <project path="src/canmv/resources/examples/kmodel" name="model_zoo" groups="canmv" remote="canmv-k230" revision="canmv_k230" clone-depth="1"/>
 
   <project path="src/canmv/port/3rd-party/micropython-wrap" name="micropython-wrap" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
 
