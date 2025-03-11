@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="remote_github.xml"/>
+  <remote name="common" fetch="https://github.com/"/>
+  <remote name="canmv-k230" fetch="https://github.com/canmv-k230/"/>
 
   <!-- sdk start -->
   <project path="." name="kendryte/canmv_k230" groups="super"  remote="common" revision="main"/>

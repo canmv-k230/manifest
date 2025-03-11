@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-    <remote name="common" fetch="https://github.com/"/>
-    <remote name="canmv-k230" fetch="https://github.com/canmv-k230/"/>
-</manifest>
