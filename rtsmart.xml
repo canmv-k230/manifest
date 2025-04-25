@@ -11,7 +11,9 @@
 
   <project path="src/rtsmart/rtsmart" name="rtsmart" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/rtsmart/mpp" name="mpp" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
-  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk" remote="canmv-k230" revision="refs/heads/v2.9.0"/>
-  <project path="src/rtsmart/examples" name="k230_rtsmart_examples" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
+
+  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk-common" remote="canmv-k230" revision="refs/heads/v2.9.0"/>
+  <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="common" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
+  <project path="src/rtsmart/examples" name="k230_rtsmart_examples" groups="sdk-common" remote="canmv-k230" revision="canmv_k230"/>
 
 </manifest>

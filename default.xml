@@ -12,6 +12,7 @@
   <project path="src/rtsmart/rtsmart" name="rtsmart" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/rtsmart/mpp" name="mpp" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk-common" remote="canmv-k230" revision="refs/heads/v2.9.0"/>
+  <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="common" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
 
   <!-- canmv start -->
   <project path="src/canmv" name="canmv" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
@@ -25,7 +26,5 @@
 
   <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="common" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/>
   <project path="src/canmv/port/3rd-party/lv_bindings/pycparser" name="eliben/pycparser" groups="canmv-common" remote="common" clone-depth="1000" revision="3cf6bf5eb16f5eadd4a058e41596145c407a79ad"/>
-
-  <project path="src/canmv/port/3rd-party/freetype/freetype" name="freetype/freetype" groups="canmv-common" remote="common" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
 
 </manifest>
