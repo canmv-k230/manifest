@@ -4,25 +4,22 @@
   <remote name="canmv-k230" fetch="https://github.com/canmv-k230/"/>
 
   <!-- sdk start -->
-  <project path="." name="kendryte/canmv_k230" groups="super"  remote="common" revision="main"/>
+  <project path="." name="kendryte/canmv_k230" groups="super" remote="common" revision="main"/>
 
   <project path="src/uboot/uboot" name="u-boot" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
-  <project path="src/opensbi/opensbi" name="opensbi" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
+  <project path="src/opensbi/opensbi" name="opensbi" groups="sdk-common" remote="canmv-k230" revision="canmv_k230"/>
 
   <project path="src/rtsmart/rtsmart" name="rtsmart" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/rtsmart/mpp" name="mpp" groups="sdk" remote="canmv-k230" revision="canmv_k230"/>
-  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk-common" remote="canmv-k230" revision="refs/heads/v2.9.0"/>
+  <project path="src/rtsmart/libs" name="k230_rtsmart_lib" groups="sdk" remote="canmv-k230" revision="refs/heads/v2.9.0"/>
+
   <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="common" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
   <project path="src/rtsmart/libs/3rd-party/mbedtls/mbedtls" name="mbedtls" groups="sdk-common" remote="canmv-k230" clone-depth="10" revision="canmv_k230"/>
 
   <!-- canmv start -->
   <project path="src/canmv" name="canmv" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
 
-  <project path="src/canmv/micropython" name="micropython" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
-
-  <project path="src/canmv/port/3rd-party/micropython-wrap" name="micropython-wrap" groups="canmv" remote="canmv-k230" revision="canmv_k230"/>
-
-  <project path="src/canmv/micropython/lib/axtls" name="micropython/axtls" groups="canmv-common" remote="common" clone-depth="200" revision="531cab9c278c947d268bd4c94ecab9153a961b43"/>
+  <project path="src/canmv/micropython" name="micropython" groups="canmv-common" remote="canmv-k230" revision="canmv_k230"/>
   <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="common" clone-depth="200" revision="e025c843b60e93689f0f991d753010bb5bd6a722"/>
 
   <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="common" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/>
