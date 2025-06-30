@@ -1,0 +1,83 @@
+name: CanMV K230 Build for Release
+
+on:
+  push:
+    tags: [ "v*" ]
+  branches:
+    - master
+    - actions
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Setup SSH
+        run: |
+          # configure git
+          git config --global user.name kendryte747
+          git config --global user.email kendryte747@gmail.com
+          # update ssh key
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Install repo
+        run: |
+          # install repo
+          mkdir -p ~/.bin/
+          curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+          chmod +x ~/.bin/repo
+          mkdir -p ${{ github.workspace }}/artifacts
+
+      - name: Sync Code for Default.xml
+        run: |
+          mkdir -p ${{ github.workspace }}/canmv_default
+          cd ${{ github.workspace }}/canmv_default
+          ~/.bin/repo init -u git@github.com:canmv-k230/manifest.git -m default.xml
+          ~/.bin/repo sync
+          ~/.bin/repo manifest -r -o ${{ github.workspace }}/artifacts/manifest_default.xml
+
+      - name: Sync Code for Rtsmart.xml
+        run: |
+          mkdir -p ${{ github.workspace }}/canmv_rtsmart
+          cd ${{ github.workspace }}/canmv_rtsmart
+          ~/.bin/repo init -u git@github.com:canmv-k230/manifest.git -m rtsmart.xml
+          ~/.bin/repo sync
+          ~/.bin/repo manifest -r -o ${{ github.workspace }}/artifacts/manifest_rtsmart.xml
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: canmv_k230_artifacts
+          paths: ${{ github.workspace }}/artifacts/*.xml
+          retention-days: 90
+
+
+  release:
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: canmv_k230_artifacts
+          path: ./release_assets
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/heads/master')
+        with:
+          name: "Release ${{ github.ref_name }}"
+          tag_name: ${{ github.ref_name }}
+          files: ./release_assets/*.xml
