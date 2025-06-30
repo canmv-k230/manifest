@@ -57,9 +57,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: canmv_k230_artifacts
-          paths: ${{ github.workspace }}/artifacts/*.xml
+          path: ${{ github.workspace }}/artifacts/*.xml
           retention-days: 90
-
 
   release:
     needs: build
