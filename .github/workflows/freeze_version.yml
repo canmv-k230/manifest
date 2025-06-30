@@ -3,9 +3,9 @@ name: CanMV K230 Build for Release
 on:
   push:
     tags: [ "v*" ]
-  branches:
-    - master
-    - actions
+    branches:
+      - master
+      - actions
   schedule:
     - cron: '0 3 * * *'
 
