@@ -14,6 +14,7 @@
 
   <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="github" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
   <project path="src/rtsmart/libs/3rd-party/mbedtls/mbedtls" name="canmv-k230/mbedtls" groups="sdk-common" remote="github" clone-depth="10" revision="canmv_k230"/>
+  <project path="src/rtsmart/libs/3rd-party/mqttclient/mqttclient" name="jiejieTop/mqttclient" groups="sdk-common" remote="github" clone-depth="10" revision="master"/>
 
   <project path="src/rtsmart/examples" name="canmv-k230/k230_rtsmart_examples" groups="sdk" remote="github" revision="canmv_k230"/>
 
