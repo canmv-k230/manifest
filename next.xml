@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/"/>
+
+  <!-- sdk start -->
+  <project path="." name="kendryte/k230_rtos_sdk" groups="sdk_super" remote="github" revision="main"/>
+
+  <project path="src/uboot/uboot" name="canmv-k230/u-boot" groups="sdk" remote="github" revision="canmv_k230"/>
+  <project path="src/opensbi/opensbi" name="canmv-k230/opensbi" groups="sdk-common" remote="github" revision="canmv_k230"/>
+
+  <project path="src/rtsmart/rtsmart" name="canmv-k230/rtsmart" groups="sdk" remote="github" revision="canmv_k230"/>
+  <project path="src/rtsmart/mpp" name="canmv-k230/mpp" groups="sdk" remote="github" revision="canmv_k230"/>
+  <project path="src/rtsmart/libs" name="canmv-k230/k230_rtsmart_lib" groups="sdk" remote="github" revision="refs/heads/v2.9.0"/>
+
+  <project path="src/rtsmart/libs/3rd-party/freetype/freetype" name="freetype/freetype" groups="sdk-common" remote="github" clone-depth="100" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e"/>
+  <project path="src/rtsmart/libs/3rd-party/mbedtls/mbedtls" name="canmv-k230/mbedtls" groups="sdk-common" remote="github" clone-depth="10" revision="canmv_k230"/>
+  <project path="src/rtsmart/libs/3rd-party/mqttclient/mqttclient" name="jiejieTop/mqttclient" groups="sdk-common" remote="github" clone-depth="10" revision="master"/>
+
+  <!-- canmv start -->
+  <project path="src/canmv" name="kendryte/canmv_k230" groups="canmv_super" remote="github" revision="next"/>
+
+  <project path="src/canmv/micropython" name="micropython/micropython" groups="canmv-common" remote="github" revision="f498a16c7db6d4b2de200b3e0856528dfe0613c3"/>
+  <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="github" revision="5b496e944ec045177afa1620920a168410b7f60b"/>
+
+</manifest>
