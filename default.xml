@@ -22,6 +22,7 @@
 
   <project path="src/canmv/micropython" name="canmv-k230/micropython" groups="canmv-common" remote="github" revision="canmv_k230"/>
   <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="github" clone-depth="200" revision="e025c843b60e93689f0f991d753010bb5bd6a722"/>
+  <project path="src/canmv/resources/ybsdcard" name="canmv-k230/ybsdcard" groups="canmv-common" remote="github" clone-depth="20" revision="master"/>
 
   <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="github" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/>
   <project path="src/canmv/port/3rd-party/lv_bindings/pycparser" name="eliben/pycparser" groups="canmv-common" remote="github" clone-depth="1000" revision="3cf6bf5eb16f5eadd4a058e41596145c407a79ad"/>
