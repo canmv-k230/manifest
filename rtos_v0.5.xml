@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/"/>
+  
+  <project name="canmv-k230/k230_rtsmart_examples" path="src/rtsmart/examples" remote="github" revision="03496a929326a2dc6f12a65c24d55653f4387315" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
+  <project name="canmv-k230/k230_rtsmart_lib" path="src/rtsmart/libs" remote="github" revision="73c8fd66b36ee2f8ea272ef0b78ec5f1f11fdda1" upstream="refs/heads/v2.9.0" dest-branch="refs/heads/v2.9.0" groups="sdk"/>
+  <project name="canmv-k230/mbedtls" path="src/rtsmart/libs/3rd-party/mbedtls/mbedtls" remote="github" revision="a3ff9bce6b1c554a91bb3ced0f83046442a1694c" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk-common" clone-depth="10"/>
+  <project name="canmv-k230/mpp" path="src/rtsmart/mpp" remote="github" revision="1ff29a8411c9ba17f1060dad8a93f9be4f206ee4" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
+  <project name="canmv-k230/opensbi" path="src/opensbi/opensbi" remote="github" revision="fc14caa9cd38c22d43652e43b386c6f949754b3b" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk-common"/>
+  <project name="canmv-k230/rtsmart" path="src/rtsmart/rtsmart" remote="github" revision="42e47b4cd511c63aef82839400a1a346043d1d0c" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
+  <project name="canmv-k230/u-boot" path="src/uboot/uboot" remote="github" revision="b679e88990a53c295d281fa50c4e3a9cfa2789f3" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
+  <project name="freetype/freetype" path="src/rtsmart/libs/3rd-party/freetype/freetype" remote="github" revision="1452355de99d22b0cba6ccc17bf5cdf3682ef61e" groups="sdk-common" clone-depth="100"/>
+  <project name="kendryte/k230_rtos_sdk" path="." remote="github" revision="464810657ba9e4a7fe15a88990f39751dca68a49" upstream="main" dest-branch="main" groups="sdk_super"/>
+</manifest>
