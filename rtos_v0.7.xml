@@ -2,12 +2,12 @@
 <manifest>
   <remote name="github" fetch="https://github.com/"/>
   
-  <project name="kendryte/k230_rtos_sdk" path="." remote="github" revision="release/rtos-v0.7" upstream="main" dest-branch="main" groups="sdk_super"/>
-  <project name="canmv-k230/u-boot" path="src/uboot/uboot" remote="github" revision="release/rtos-v0.7" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
-  <project name="canmv-k230/rtsmart" path="src/rtsmart/rtsmart" remote="github" revision="release/rtos-v0.7" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
-  <project name="canmv-k230/k230_rtsmart_lib" path="src/rtsmart/libs" remote="github" revision="release/rtos-v0.7" upstream="refs/heads/v2.9.0" dest-branch="refs/heads/v2.9.0" groups="sdk"/>
-  <project name="canmv-k230/k230_rtsmart_examples" path="src/rtsmart/examples" remote="github" revision="release/rtos-v0.7" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk"/>
-  <project name="canmv-k230/mpp" path="src/rtsmart/mpp" remote="github" revision="release/rtos-v0.7" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk-special"/>
+  <project name="kendryte/k230_rtos_sdk" path="." remote="github" revision="release/rtos-v0.7" groups="sdk_super"/>
+  <project name="canmv-k230/u-boot" path="src/uboot/uboot" remote="github" revision="release/rtos-v0.7" groups="sdk"/>
+  <project name="canmv-k230/rtsmart" path="src/rtsmart/rtsmart" remote="github" revision="release/rtos-v0.7" groups="sdk"/>
+  <project name="canmv-k230/k230_rtsmart_lib" path="src/rtsmart/libs" remote="github" revision="release/rtos-v0.7" groups="sdk"/>
+  <project name="canmv-k230/k230_rtsmart_examples" path="src/rtsmart/examples" remote="github" revision="release/rtos-v0.7" groups="sdk"/>
+  <project name="canmv-k230/mpp" path="src/rtsmart/mpp" remote="github" revision="release/rtos-v0.7" groups="sdk-special"/>
 
   <project name="canmv-k230/mbedtls" path="src/rtsmart/libs/3rd-party/mbedtls/mbedtls" remote="github" revision="a3ff9bce6b1c554a91bb3ced0f83046442a1694c" upstream="canmv_k230" dest-branch="canmv_k230" groups="sdk-common" clone-depth="10"/>
   <project name="canmv-k230/micropython" path="src/canmv/micropython" remote="github" revision="0295137e60c0de862c8ee72d81c88d9e57e3973b" upstream="canmv_k230" dest-branch="canmv_k230" groups="canmv-common"/>
