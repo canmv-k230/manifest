@@ -9,7 +9,7 @@
   <project path="src/opensbi/opensbi" name="canmv-k230/opensbi" groups="sdk-common" remote="github" revision="canmv_k230"/>
 
   <project path="src/rtsmart/rtsmart" name="canmv-k230/rtsmart" groups="sdk" remote="github" revision="canmv_k230"/>
-  <project path="src/rtsmart/libs" name="canmv-k230/k230_rtsmart_lib" groups="sdk" remote="github" revision="refs/heads/v2.9.0"/>
+  <project path="src/rtsmart/libs" name="canmv-k230/k230_rtsmart_lib" groups="sdk" remote="github" revision="canmv_k230"/>
   <project path="src/rtsmart/examples" name="canmv-k230/k230_rtsmart_examples" groups="sdk" remote="github" revision="canmv_k230"/>
   <project path="src/rtsmart/mpp" name="canmv-k230/mpp" groups="sdk-special" remote="github" revision="canmv_k230"/>
 
