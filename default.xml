@@ -19,6 +19,7 @@
   <project path="src/rtsmart/libs/3rd-party/mqttclient/mqttclient" name="jiejieTop/mqttclient" groups="sdk-common" remote="github" clone-depth="100" revision="956e0c8dcac02d4b107ccb49f1990c7718b6b585"/>
   <project path="src/rtsmart/libs/3rd-party/lvgl/lvgl" name="lvgl/lvgl" groups="sdk-common" remote="github" clone-depth="100" revision="refs/heads/release/v9.4"/>
   <project path="src/rtsmart/libs/3rd-party/cjson/cJSON" name="DaveGamble/cJSON" groups="sdk-common" remote="github" clone-depth="100" revision="master"/>
+  <project path="src/rtsmart/libs/3rd-party/libwebsockets/libwebsockets" name="warmcat/libwebsockets" groups="sdk-common" remote="github" clone-depth="100" revision="b4b5aed3903eaff09cd76a410f69bbe5dff66f8e"/>
 
   <!-- canmv start -->
   <project path="src/canmv" name="kendryte/canmv_k230" groups="canmv_super" remote="github" revision="canmv_k230"/>
