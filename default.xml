@@ -21,7 +21,8 @@
   <project path="src/rtsmart/libs/3rd-party/cjson/cJSON" name="DaveGamble/cJSON" groups="sdk-common" remote="github" clone-depth="100" revision="master"/>
   <project path="src/rtsmart/libs/3rd-party/libwebsockets/libwebsockets" name="warmcat/libwebsockets" groups="sdk-common" remote="github" clone-depth="100" revision="ff5a3aa702d8864caa23931fc508df099cc3e816"/>
   <project path="src/rtsmart/libs/3rd-party/nimble/nimble" name="apache/mynewt-nimble" groups="sdk-common" remote="github" revision="70da7f3a05c3ded36c08c56e481fb400c5c29bac"/>
-  <project path="src/rtsmart/libs/3rd-party/iperf/iperf" name="esnet/iperf" groups="sdk-common" remote="github" revision="c9b74229d0d9bfec6d2307b66b43c29a7665ad0b"/>
+
+  <project path="src/rtsmart/examples/3rd-party/iperf/iperf" name="esnet/iperf" groups="sdk-common" remote="github" revision="c9b74229d0d9bfec6d2307b66b43c29a7665ad0b"/>
 
   <!-- canmv start -->
   <project path="src/canmv" name="kendryte/canmv_k230" groups="canmv_super" remote="github" revision="canmv_k230"/>
